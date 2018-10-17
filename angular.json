@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "weatherApp": {
+    "Angweatherapp": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/weatherApp",
+            "outputPath": "dist/Angweatherapp",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "weatherApp:build"
+            "browserTarget": "Angweatherapp:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "weatherApp:build:production"
+              "browserTarget": "Angweatherapp:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "weatherApp:build"
+            "browserTarget": "Angweatherapp:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "weatherApp-e2e": {
+    "Angweatherapp-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "weatherApp:serve"
+            "devServerTarget": "Angweatherapp:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "weatherApp:serve:production"
+              "devServerTarget": "Angweatherapp:serve:production"
             }
           }
         },
@@ -123,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "weatherApp"
+  "defaultProject": "Angweatherapp"
 }
